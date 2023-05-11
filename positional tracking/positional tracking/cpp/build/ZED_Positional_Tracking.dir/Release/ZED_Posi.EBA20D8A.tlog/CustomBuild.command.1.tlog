@@ -1,0 +1,10 @@
+^C:\USERS\OBJEL\DOCUMENTS\ZED-SDK-TUTORIALS\POSITIONAL TRACKING\POSITIONAL TRACKING\CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/objel/Documents/zed-sdk-tutorials/positional tracking/positional tracking/cpp" "-BC:/Users/objel/Documents/zed-sdk-tutorials/positional tracking/positional tracking/cpp/build" --check-stamp-file "C:/Users/objel/Documents/zed-sdk-tutorials/positional tracking/positional tracking/cpp/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

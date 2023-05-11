@@ -151,14 +151,14 @@ void GLViewer::init(int argc, char **argv, sl::MODEL camera_model) {
             model = new Model3D_ZED;
             break;
         case sl::MODEL::ZED_M:
-        case sl::MODEL::ZED_XM :
+        //case sl::MODEL::ZED_XM :
             model = new Model3D_ZED_M;
             break;
-        case sl::MODEL::ZED2:
-        case sl::MODEL::ZED2i:
-        case sl::MODEL::ZED_X:
-            model = new Model3D_ZED2;
-            break;
+        //case sl::MODEL::ZED2:
+        //case sl::MODEL::ZED2i:
+        //case sl::MODEL::ZED_X:
+        //    model = new Model3D_ZED2;
+        //    break;
         // case sl::MODEL::ZED_X:
         //     model = new Model3D_ZED_X;
         //     break;

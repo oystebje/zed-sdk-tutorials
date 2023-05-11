@@ -74,7 +74,7 @@ int main(int argc, char **argv)
     // Set parameters for Positional Tracking
     PositionalTrackingParameters positional_tracking_param;  
     positional_tracking_param.enable_imu_fusion = true;
-    // positional_tracking_param.enable_area_memory = true;
+    positional_tracking_param.enable_area_memory = true;
     // enable Positional Tracking
     returned_state = zed.enablePositionalTracking(positional_tracking_param);
     if (returned_state != ERROR_CODE::SUCCESS)
@@ -157,18 +157,18 @@ void parseArgs(int argc, char **argv, sl::InitParameters &param)
         else if (arg.find("HD2K") != string::npos) {
             param.camera_resolution = RESOLUTION::HD2K;
             cout << "[Sample] Using Camera in resolution HD2K" << endl;
-        }else if (arg.find("HD1200") != string::npos) {
-            param.camera_resolution = RESOLUTION::HD1200;
-            cout << "[Sample] Using Camera in resolution HD1200" << endl;
+    //    }else if (arg.find("HD1200") != string::npos) {
+    //        param.camera_resolution = RESOLUTION::HD1200;
+    //        cout << "[Sample] Using Camera in resolution HD1200" << endl;
         } else if (arg.find("HD1080") != string::npos) {
             param.camera_resolution = RESOLUTION::HD1080;
             cout << "[Sample] Using Camera in resolution HD1080" << endl;
         } else if (arg.find("HD720") != string::npos) {
             param.camera_resolution = RESOLUTION::HD720;
             cout << "[Sample] Using Camera in resolution HD720" << endl;
-        }else if (arg.find("SVGA") != string::npos) {
-            param.camera_resolution = RESOLUTION::SVGA;
-            cout << "[Sample] Using Camera in resolution SVGA" << endl;
+    //    }else if (arg.find("SVGA") != string::npos) {
+    //        param.camera_resolution = RESOLUTION::SVGA;
+    //        cout << "[Sample] Using Camera in resolution SVGA" << endl;
         }else if (arg.find("VGA") != string::npos) {
             param.camera_resolution = RESOLUTION::VGA;
             cout << "[Sample] Using Camera in resolution VGA" << endl;
